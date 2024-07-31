@@ -54,6 +54,7 @@ export default {
     theme: {
       dark: false,
       themes: {
+      
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
@@ -62,6 +63,10 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
+        },
+        light: {
+          nice: "#ffa84b",
+          haha:"#5e6672"
         }
       }
     }
