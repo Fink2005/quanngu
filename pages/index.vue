@@ -1,4 +1,5 @@
 <template>
+  <Panel></Panel>
 </template>
 
 <script>
