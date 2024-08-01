@@ -1,5 +1,8 @@
 <template>
-  <Panel></Panel>
+  <div>
+    <Nghia></Nghia>
+    <Panel></Panel>
+  </div>
 </template>
 
 <script>
