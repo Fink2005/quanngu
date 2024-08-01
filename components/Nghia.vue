@@ -11,7 +11,7 @@
           </div>
           <v-row>
             <v-col cols="12" md="3">
-              <v-hover v-slot="{hover}"></v-hover>
+              <v-hover v-slot="{hover}">
                 <v-btn :color="hover ? '#dedfe3' : '#f69351'" :class="hover ? 'black--text' : 'white--text'" class="pa-4 mt-6 text-no-wrap rounded-pill text-subtitle-2" style="width:150px; height:50px;">
                   Get Started
                 </v-btn>

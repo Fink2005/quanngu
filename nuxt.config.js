@@ -66,7 +66,8 @@ export default {
         light: {
           darkgrey: "#5e6672",
           darkgrey2: "#5f6570",
-          darkpurple: "#6157f8"
+          darkpurple: "#6157f8",
+          newgrey: "#5e6672"
         }
       }
     }

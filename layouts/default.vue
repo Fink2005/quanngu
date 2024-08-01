@@ -46,13 +46,15 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer color="white" padless="false" absolute="false" class="d-flex flex-row align-center">
-    <v-col class="d-flex text-left" col="12">
-      <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66309a5330883e87e23894ed_Component%2011.png" alt="" width="20" height="20"> </img>
-      
-      <p>Copyright ©2024 JobInn Technologies Inc.</p>
-    </v-col>
-  </v-footer>
+    <v-sheet class="mt-16" width="100">
+      <v-footer color="white" padless="false" absolute="false" class="d-flex align-center" width="100%" max-height="100%">
+          <v-col class="d-flex align-center pa-6 ml-9" col="12">
+              <v-img class="" src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66309a5330883e87e23894ed_Component%2011.png" alt="" max-width="40"></v-img>
+            <v-divider class="mx-4" vertical></v-divider>
+              <p class="d-flex align-center font-weight-bold newgrey--text text--darken-1 caption">Copyright ©2024 JobInn Technologies Inc.</p>
+          </v-col>
+      </v-footer>
+    </v-sheet>
   </v-app>
 </template>
 
@@ -69,5 +71,12 @@ export default {
 <style scoped>
   .v-menu__content {
     box-shadow: none;
+  }
+  .f-footer-line {
+    background-color: #5e6672;
+    width: 1px;
+    height: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 </style>
