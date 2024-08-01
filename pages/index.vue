@@ -1,8 +1,9 @@
 <template>
   <div>
-    <Nghia />
+    <nghia />
     <sybodoi />
-    <Panel />
+    <panel />
+    <saideptrieu />
   </div>
 </template>
 
