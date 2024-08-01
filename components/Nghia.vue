@@ -2,7 +2,7 @@
     <v-sheet class="d-flex flex-column justify-space-between" color="transparent">
       <v-sheet class="d-flex justify-center mt-16">
         <!-- Left Content -->
-        <v-sheet class="d-flex flex-column justify-center" style="width: 50%;">
+        <v-sheet class="d-flex flex-column justify-center ml-16" style="width: 50%;">
           <div class="text-subtitle-2 font-weight-bold yellow--text text--darken-4 mb-4">WORKFORCE OF TOMORROW</div>
           <div class="text-h2 font-weight-black line-height" style="width: 400px;">Train, Work, Hire : All in</div>
           <div class="text-h2 font-weight-black font-italic text-decoration-underline yellow--text text--darken-4 pt-4">One Place.</div>
@@ -11,7 +11,7 @@
           </div>
           <v-row>
             <v-col cols="12" md="3">
-              <v-hover v-slot="{hover}">
+              <v-hover v-slot="{hover}"></v-hover>
                 <v-btn :color="hover ? '#dedfe3' : '#f69351'" :class="hover ? 'black--text' : 'white--text'" class="pa-4 mt-6 text-no-wrap rounded-pill text-subtitle-2" style="width:150px; height:50px;">
                   Get Started
                 </v-btn>
@@ -31,7 +31,7 @@
       </v-sheet>
   
       <!-- Bottom Section -->
-      <v-sheet class="d-flex justify-space-around mt-16">
+      <v-sheet class="d-flex justify-space-around mt-16 mb-16">
         <v-sheet class="d-flex flex-column align-center mt-16">
           <v-img
             lazy-src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6630740717a94b73d8ed8dbc_star.svg"

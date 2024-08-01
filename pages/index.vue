@@ -1,9 +1,9 @@
 <template>
   <div>
     <nghia />
+    <saideptrieu />
     <sybodoi />
     <panel />
-    <saideptrieu />
   </div>
 </template>
 
