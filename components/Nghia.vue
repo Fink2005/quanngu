@@ -1,6 +1,6 @@
 <template>
     <v-sheet class="d-flex flex-column justify-space-between ml-16 mt-16 mr-n16" color="transparent">
-      <v-sheet class="d-flex justify-space-between">
+      <v-sheet class="ml-16 pl-16 d-flex justify-space-between">
         <!-- Left Content -->
         <v-sheet class="d-flex flex-column justify-center ml-16" style="width: 70%;">
           <div class="text-subtitle-2 font-weight-bold yellow--text text--darken-4 mb-4">WORKFORCE OF TOMORROW</div>
