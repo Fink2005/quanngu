@@ -1,7 +1,7 @@
 
 <template>
   
-  <v-sheet height="10000px">
+  <v-sheet>
     <v-sheet  class="slider ">
       <h1 class="text-center py-10 text-h3 font-bold-black">Tailored for Your Needs</h1>
     <!-- v-tabs -->
@@ -163,7 +163,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 
 .slider {background-color: #fffaf1}
