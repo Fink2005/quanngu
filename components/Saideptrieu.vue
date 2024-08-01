@@ -36,7 +36,9 @@
                   <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b64b_public.svg" class="ma-md-4 ma-lg-4 mb-lg-0 elevation=1">
                 </div>
                 <v-card-title class="title1">
-                 Automated Smart Matching
+                  <h4>
+                 Automated Smart <br> Matching
+                  </h4>
                 </v-card-title>
                 <v-card-text>
                   Instantly connect with the perfect candidates for your needs.
@@ -47,7 +49,7 @@
                   <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b631_offline_bolt.svg" class="ma-md-4 ma-lg-4 mb-lg-0">
                 </div>
                 <v-card-title class="title2">
-                 Training and Badge Certification
+                 Training and Badge  <br> Certification
                 </v-card-title>
                 <v-card-text>
                  Equip your workforce with specific skills, verified through certification.
@@ -60,7 +62,7 @@
                   <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307eaa4b1a01a34c45b653_password.svg" class="ma-md-4 ma-lg-4 mb-lg-0">
                 </div>
                 <v-card-title class="title3">
-                  Compliance and Risk Management
+                  Compliance and Risk  <br> Management
                 </v-card-title>
                 <v-card-text>
                   Stay compliant with all employment laws and regulations.
@@ -71,7 +73,7 @@
                   <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b622_timelapse.svg" class="ma-md-4 ma-lg-4 mb-lg-0">
                 </div>
                 <v-card-title class="title4">
-                 Flexible Workforce Access
+                 Flexible Workforce  <br> Access
                 </v-card-title>
                 <v-card-text>
                   Access skilled on-demand workers to match your dynamic staffing needs.
@@ -135,18 +137,8 @@ export default {
 </script>
 <style scoped>
 
-.title3{
-  font-size: 22px;
-}
-.title1 {
-  font-size:24px;
-}
-.title2 {
-  font-size:23px;
-}
-.title4 {
-  font-size:23px;
-}
+
+
 .pa1{
    margin-top: 95px;
    letter-spacing: .08em;
