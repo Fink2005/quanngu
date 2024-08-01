@@ -1,7 +1,7 @@
 <template>  
   <div class="super-duper-box animate__animated animate__fadeIn">
       <v-sheet color="transparent" class="super-box-1 d-flex flex-row ml-lg-16 justify-space-around" width="100%" height="100%">
-        <v-sheet class="left d-flex flex-column ml-lg-16" width="25%">
+        <v-sheet class="d-flex flex-column ml-lg-16" width="25%">
           <p class="pa1">
             FEATURES
           </p>
@@ -133,7 +133,7 @@ export default {
   name: 'Animated'
 }
 </script>
-<style> 
+<style scoped>
 
 .title3{
   font-size: 22px;
@@ -146,9 +146,6 @@ export default {
 }
 .title4 {
   font-size:23px;
-}
-.container{
-  max-width:10000px;
 }
 .pa1{
    margin-top: 95px;
@@ -243,12 +240,9 @@ letter-spacing: .08em;
   line-height: 1.8;
   letter-spacing: -.02em;}
 
-  .try{
+.try{
   margin-top:15px;
   margin-left:20px;
   color: orange;
-  }
-.left{
-  margin-left: 1000px;
 }
 </style>

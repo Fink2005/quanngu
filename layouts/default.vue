@@ -42,7 +42,7 @@
         </div>
     </v-tool-bar>
     <v-main>
-      <v-container>
+      <v-container class="pa-0 ma-0" fluid>
         <Nuxt />
       </v-container>
     </v-main>
