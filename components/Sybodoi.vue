@@ -6,9 +6,17 @@
       <h1 class="text-center py-10 text-h3 font-bold-black">Tailored for Your Needs</h1>
     <!-- v-tabs -->
     <v-tabs class="tabs animate__animated animate__fadeInUp"  slider-size="0" height="100px"  v-model="tab">
-      <v-tab class="tab1 mx-5 px-11 ml-16 rounded-xl">Work</v-tab>
-      <v-tab class="tab2 mx-5 px-11 rounded-xl">Hire</v-tab>
-      <v-tab class="tab3 mx-5 px-11 rounded-xl">Both</v-tab>
+      <v-hover v-slot="{hover}">
+      <v-tab :style="{'overflow' :hover ?'hidden' : 'none','transition' :hover ? '0.3s' : 'none', 'transform' :hover ? 'scale3d(1.06, 1.06, 1.01)' : 'none' }" class="tab ma-5 px-11 ml-16 rounded-xl black--text">Work</v-tab>
+
+    </v-hover>
+    <v-hover v-slot="{hover}">
+      <v-tab :style="{'overflow' :hover ?'hidden' : 'none','transition' :hover ? '0.3s' : 'none', 'transform' :hover ? 'scale3d(1.06, 1.06, 1.01)' : 'none'}"  class="tab ma-5 px-11 rounded-xl black--text">Hire</v-tab>
+    </v-hover>
+
+    <v-hover v-slot="{hover}">
+      <v-tab :style="{'overflow' :hover ?'hidden' : 'none','transition' :hover ? '0.3s' : 'none', 'transform' :hover ? 'scale3d(1.06, 1.06, 1.01)' : 'none' }"  class="tab ma-5 px-11 rounded-xl black--text">Both</v-tab>
+    </v-hover>
         
     </v-tabs>
 
@@ -79,8 +87,6 @@
             <v-img width="325" class="rounded-r-xl" aspect-ratio="1" src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6390599971afe7741f7faf63_design-team-card-bg-01.svg"  alt="SVG Image"/>
             <v-img class="imageBoth " width="280" height="500" src="/img/iphoneBoth.png" alt="Image"/>
           </v-text>
-
-        
         </v-card>
 
 
@@ -166,38 +172,17 @@ export default {
 <style scoped>
 
 
-.slider {background-color: #fffaf1}
-.tab1 {
+
+.tab {
   border: 1px solid transparent;
   width: 175px;
   max-height: 80px; 
-  transition: 0.3s;
   box-shadow:  0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
-.tab2 {
-  border: 1px solid transparent;
-  width: 175px;
-  max-height: 80px; 
-  transition: 0.3s;
-  box-shadow:  0 2px 10px 0 rgba(0, 0, 0, 0.06);
-}
-.tab3 {
-  border: 1px solid transparent;
-  width: 175px;
-  max-height: 80px; 
-  transition: 0.3s;
-  box-shadow:  0 2px 10px 0 rgba(0, 0, 0, 0.06);
-}
-.tab1:hover {
-  transform: scale3d(1.06, 1.06, 1.01);
-
-  
 
 
-}
-.tab2:hover {transform: scale3d(1.06, 1.06, 1.01)}
 
-.tab3:hover {transform: scale3d(1.06, 1.06, 1.01)}
+
 .image { position: absolute; 
   top: -55px;
   right: 290px;
@@ -230,7 +215,8 @@ font-weight: 1000;}
 
 
 .v-tab {text-transform: capitalize ;}
-.v-application .primary--text { color: black !important;}
+.v-application .primary--text:hover { color: rgb(180, 56, 56) !important;
+caret-color: rgb(191, 43, 43) !important; }
 
 .tabs {padding-left: 310px;}
 
