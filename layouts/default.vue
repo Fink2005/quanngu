@@ -47,8 +47,8 @@
       </v-container>
     </v-main>
     <v-sheet class="mt-16" width="100">
-      <v-footer color="white" padless="false" absolute="false" class="d-flex align-center" width="100%" max-height="100%">
-          <v-col class="d-flex align-center pa-6 ml-9" col="12">
+      <v-footer color="white" padless="false" absolute="false" class="d-flex align-center mt-16" width="100%" max-height="100%">
+          <v-col class="d-flex align-center ml-9 mt-n16" col="12">
               <v-img class="" src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66309a5330883e87e23894ed_Component%2011.png" alt="" max-width="40"></v-img>
             <v-divider class="mx-4" vertical></v-divider>
               <p class="d-flex align-center font-weight-bold newgrey--text text--darken-1 caption">Copyright ©2024 JobInn Technologies Inc.</p>

@@ -1,8 +1,8 @@
 <template>
-    <v-sheet class="d-flex flex-column justify-space-between" color="transparent">
-      <v-sheet class="d-flex justify-center mt-16">
+    <v-sheet class="d-flex flex-column justify-space-between ml-16 mt-16 mr-n16" color="transparent">
+      <v-sheet class="d-flex justify-space-between">
         <!-- Left Content -->
-        <v-sheet class="d-flex flex-column justify-center ml-16" style="width: 50%;">
+        <v-sheet class="d-flex flex-column justify-center ml-16" style="width: 70%;">
           <div class="text-subtitle-2 font-weight-bold yellow--text text--darken-4 mb-4">WORKFORCE OF TOMORROW</div>
           <div class="text-h2 font-weight-black line-height" style="width: 400px;">Train, Work, Hire : All in</div>
           <div class="text-h2 font-weight-black font-italic text-decoration-underline yellow--text text--darken-4 pt-4">One Place.</div>
@@ -20,15 +20,18 @@
           </v-row>
         </v-sheet>
         <!-- Right Image -->
-        <v-img
-          aspect-ratio="16/9"
-          lazy-src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6611a6969d96ffefe01fbb94_Component%201.png"
-          style="width: 50%;"
-          max-width="100%"
-          max-height="100%"
-          src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6611a6969d96ffefe01fbb94_Component%201.png">
-        </v-img>
-      </v-sheet>
+          <v-sheet class="ml-16 mb-16">
+           <v-img
+            contain="true"
+            background-position="right"
+            class="ml-16 pl-16"
+            lazy-src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6611a6969d96ffefe01fbb94_Component%201.png"
+            style="width: 30%;"
+            max-width="100%"
+            src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6611a6969d96ffefe01fbb94_Component%201.png">
+          </v-img>
+          </v-sheet>
+        </v-sheet>
   
       <!-- Bottom Section -->
       <v-sheet class="d-flex justify-space-around mt-16 mb-16">
