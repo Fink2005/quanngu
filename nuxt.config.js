@@ -54,6 +54,7 @@ export default {
     theme: {
       dark: false,
       themes: {
+      
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
@@ -67,7 +68,9 @@ export default {
           darkgrey: "#5e6672",
           darkgrey2: "#5f6570",
           darkpurple: "#6157f8",
-          newgrey: "#5e6672"
+          newgrey: "#5e6672",
+          nice: "#ffa84b",
+          haha:"#5e6672"
         }
       }
     }
