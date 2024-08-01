@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="pb-16">
     <div>
       <v-row>
         <v-col cols="12" md="6">
@@ -83,10 +83,12 @@
               outlined
               rounded
             ></v-textarea>
+            <v-sheet height="150px">
+              <v-hover v-slot="{ hover }">
+                <v-btn class="white--text px-8" height="70" :class="hover ? 'mt-0' : 'mt-1'" :color="hover ? 'haha' : '#ffa84b'" elevation="5" rounded="pill">Send Message</v-btn>
+              </v-hover>
+            </v-sheet>
 
-            <v-hover v-slot="{ hover }">
-              <v-btn class="white--text px-8" height="70" :class="hover ? 'mt-0' : 'mt-1'" :color="hover ? 'haha' : '#ffa84b'" elevation="5" rounded="pill">Send Message</v-btn>
-            </v-hover>
           </v-form>
         </v-col>
 
@@ -189,7 +191,7 @@ export default {
 
 <style scoped>
 .v-btn{
-  transition:  0.3s ease-in-out;
+  transition:  0.5s ease;
 }
 
 
