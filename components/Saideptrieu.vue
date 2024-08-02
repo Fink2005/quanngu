@@ -1,6 +1,6 @@
 <template>  
-  <div class="super-duper-box animate__animated animate__fadeIn">
-      <v-sheet color="transparent" class="super-box-1 d-flex flex-row ml-lg-16 justify-space-around" width="100%" height="100%">
+  <v-sheet color="transparent" class="super-duper-box d-flex flex-column animate__animated animate__fadeIn">
+      <v-sheet color="transparent" :class="$vuetify.breakpoint.mdAndDown ? flex-column : flex-row" class="super-box-1 d-flex ml-lg-16 justify-space-around" width="100%" height="100%">
         <v-sheet class="d-flex flex-column ml-lg-16" width="25%">
           <p class="pa1">
             FEATURES
@@ -30,8 +30,8 @@
           </v-sheet>
         </v-sheet>
         <v-sheet color="transparent" class="right d-flex flex-column mr-lg-16" width="40%" >
-            <v-container class="big-c1 d-flex">
-             <v-card class="c1 ma-md-4 mr-lg-16" outlined shaped elevation="3" width="35%">
+            <v-container class="big-c1 d-flex" >
+             <v-card class="c1 ma-md-4 mr-lg-16 d-inline" outlined shaped elevation="3" >
                 <div>
                   <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b64b_public.svg" class="ma-md-4 ma-lg-4 mb-lg-0 elevation=1">
                 </div>
@@ -84,8 +84,8 @@
         </v-sheet>
       <div class="super box 2">
       </div>
-      <div class="down ma-md-0 mt-lg-16">
-          <v-sheet color="white" class="d-flex flex-row justify-space-around">
+      <div class="down ma-md-0 mt-lg-16 d-flex">
+          <v-sheet color="white" :class="$vuetify.breakpoint.mdAndDown ? flex-column : flex-row" class="d-flex justify-space-around">
             <v-sheet class="left-sheet ml-lg-16" height="100%" width="40%">
               <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6611aa9ef1eebb5a516fdf9b_figure.png">
             </v-sheet>
@@ -127,7 +127,7 @@
             </v-sheet>
            
       </div>
-  </div>
+  </v-sheet>
 
 </template>
 <script>
