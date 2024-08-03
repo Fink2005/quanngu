@@ -31,7 +31,7 @@
         </v-sheet>
         <v-sheet color="transparent" class="right d-flex flex-column mr-lg-16" width="40%" >
             <v-container class="big-c1 d-flex" >
-             <v-card class="c1 ma-md-4 mr-lg-16 d-inline " outlined shaped elevation="3" >
+             <v-card class="c1 ma-md-4 mr-lg-16 d-inline " outlined shaped elevation="3" width="35%">
                 <div>
                   <img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/66307ea94b1a01a34c45b64b_public.svg" class="ma-md-4 ma-lg-4 mb-lg-0 elevation=1">
                 </div>
