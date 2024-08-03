@@ -1,27 +1,29 @@
 <template>
-    <v-app>
-      <div class="d-flex justify-center text-button darkgrey--text mb-4">ANY QUESTION?</div>
-      <div class="d-flex justify-center text-h3 font-weight-bold mb-16">Frequently Asked Questions</div>
-      <v-expansion-panels class="mt-4" flat v-model="panel">
-        <v-expansion-panel v-for="(item, index) in items" :key="item" class="mb-7" style="max-width: 820px;">
-          <v-expansion-panel-header class="text-h6 font-weight-medium">
-            {{ item.title }}
-            <template v-slot:actions>
-              <v-card width="40" height="40" class="d-flex justify-center align-center" rounded="pill" outlined :color="index === panel ? 'rgb(236, 238, 254)' : ''">
-                <v-icon :color="index === panel ? 'rgb(81, 103, 246)' : ''">
-                  mdi-chevron-down
-                </v-icon>
-              </v-card>
-            </template>
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            {{ item.content }}
-          </v-expansion-panel-content>
-          <v-divider class="mt-5"></v-divider>
-        </v-expansion-panel>
-      </v-expansion-panels>
-    </v-app>
-  </template>
+  <div>
+    <div class="d-flex justify-center text-button darkgrey--text mb-4">ANY QUESTION?</div>
+    <div class="d-md-flex d-none justify-center text-h3 font-weight-bold mb-16">Frequently Asked Questions</div>
+    <div class="d-flex d-md-none justify-center text-h3 font-weight-bold">Frequently</div>
+    <div class="d-flex d-md-none justify-center text-h3 font-weight-bold mb-16">Asked Questions</div>
+    <v-expansion-panels class="mt-4" flat v-model="panel">
+      <v-expansion-panel v-for="(item, index) in items" :key="item" class="mb-7" style="max-width: 820px;">
+        <v-expansion-panel-header class="text-h6 font-weight-medium">
+          {{ item.title }}
+          <template v-slot:actions>
+            <v-card width="40" height="40" class="d-flex justify-center align-center" rounded="pill" outlined :color="index === panel ? 'rgb(236, 238, 254)' : ''">
+              <v-icon :color="index === panel ? 'rgb(81, 103, 246)' : ''">
+                mdi-chevron-down
+              </v-icon>
+            </v-card>
+          </template>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          {{ item.content }}
+        </v-expansion-panel-content>
+        <v-divider class="mt-5"></v-divider>
+      </v-expansion-panel>
+    </v-expansion-panels>
+  </div>
+</template>
   
   <script>
   export default {
