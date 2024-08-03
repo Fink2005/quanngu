@@ -1,32 +1,32 @@
 <template>
   <v-app>
-    <v-container id="max-width-container ml-16" fluid>
+    <v-container id="max-width-container" fluid>
     <!-- Top Section -->
-      <v-row class="d-flex align-center flex-nowrap justify-space-between mw-tc" :class="$vuetify.breakpoint.mdAndDown ? 'flex-column flex-wrap' : '' ">
+      <v-row class="d-flex align-center flex-nowrap justify-space-between mw-tc pa-5" :class="$vuetify.breakpoint.smAndDown ? 'flex-column flex-wrap ma-0 pa-0' : '' ">
       <!-- Left Content -->
-        <v-col cols="12" md="6" class="d-flex flex-column" width="60%" :class="$vuetify.breakpoint.mdAndDown ? 'align-center text-center' : '' ">
+        <v-col cols="12" md="6" class="d-flex flex-column" width="60%" :class="$vuetify.breakpoint.smAndDown ? 'align-center text-center ma-0 pa-0' : '' ">
           <div class="text-subtitle-2 font-weight-bold mb-4 sub-text">WORKFORCE OF TOMORROW</div>
-          <div class="font-weight-bold line-height mb-4">
+          <div class="font-weight-bold line-height">
             Train, Work, Hire: All in <span class="font-weight-bold font-italic text-decoration-underline one-place-color">One Place</span>
           </div>
-          <div class="text-body-1 font-weight-medium mt-6 text-body-width">
+          <div class="text-body-1 font-weight-medium mt-4 text-body-width">
             Train your community into a dynamic pool of skilled workers, ready to tackle one-off shifts seamlessly.
           </div>
           <v-hover v-slot:default="{ hover }">
-            <v-btn :color="hover ? '#dedfe3' : '#f89500'" :class="hover ? 'black--text' : 'white--text'" class="mt-6 text-no-wrap rounded-pill text-subtitle-2 text-capitalize" style="width:150px; height:50px;">
+            <v-btn :color="hover ? '#dedfe3' : '#f89500'" :class="hover ? 'black--text' : 'white--text'"  :width="$vuetify.breakpoint.smAndDown ? '100% !important' : '' " class="mt-6 text-no-wrap rounded-pill text-subtitle-2 text-capitalize" style="width:150px; height:50px;">
               Get Started
             </v-btn>
           </v-hover>
         </v-col>
       <!-- Right Image -->
-        <v-col cols="12" md="6" class="d-flex justify-center mt-6" width="40%">
+        <v-col cols="12" md="7" class="d-flex justify-center mt-6" width="40%" :class="$vuetify.breakpoint.smAndDown ? 'ma-0 pa-0' : '' ">
           <v-img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6611a6969d96ffefe01fbb94_Component%201.png" class="responsive-img"></v-img>
         </v-col>
       </v-row>
 
     <!-- Bottom Section -->
-      <v-row class="mt-16" justify="center" :class="$vuetify.breakpoint.mdAndDown ? 'flex-column flex-wrap' : '' ">
-        <v-col cols="12" md="4" class="d-flex flex-column align-center text-center mt-16">
+      <v-row class="mt-16" justify="center" :class="$vuetify.breakpoint.mdAndDown ? 'flex-row' : '' ">
+        <v-col cols="12" md="4" class="d-flex flex-column align-center justify-space-between text-center mt-16">
           <v-img src="https://cdn.prod.website-files.com/63877b2a41191ed2e132006b/6630740717a94b73d8ed8dbc_star.svg" height="30" width="30"></v-img>
           <div class="text-h5 font-weight-bold my-5">Organizations</div>
           <div class="text-center mb-5" style="max-width: 550px;">
@@ -57,7 +57,7 @@ export default {
 <style scoped>
 .line-height {
   line-height: 1.2 !important;
-  font-size: 3.5rem !important;
+  font-size: 2.8rem !important;
   letter-spacing: -0.0083333333em !important;
   font-family: "Claritycity", sans-serif !important;
   color: #00112b !important;
@@ -76,7 +76,7 @@ export default {
 }
 
 .text-body-width {
-  width: 100% !important;
+  width: 350px !important;
   max-width: 470px !important;
 }
 
@@ -97,14 +97,13 @@ export default {
 
 @media (max-width: 960px) {
   .line-height {
-    font-size: 2rem !important;
     line-height: 1.2 !important;
   }
 }
 
 @media (max-width: 600px) {
   .text-body-width {
-    max-width: 300px !important;
+    max-width: 355px !important;
   }
   .responsive-img {
     max-width: 400px !important;
@@ -113,7 +112,7 @@ export default {
 
 @media (max-width: 400px) {
   .text-body-width {
-    max-width: 200px !important;
+    max-width: 350px !important;
   }
   .responsive-img {
     max-width: 300px !important;

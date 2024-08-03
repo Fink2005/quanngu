@@ -1,10 +1,6 @@
 <template>
   <div>
     <nghia />
-    <saideptrieu />
-    <sybodoi />
-    <panel />
-    <hehe/>
   </div>
 </template>
 
