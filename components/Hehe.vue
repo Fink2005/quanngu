@@ -85,7 +85,7 @@
             ></v-textarea>
             <v-sheet height="150px">
               <v-hover v-slot="{ hover }">
-                <v-btn class="white--text px-8" height="70" :class="hover ? 'mt-0' : 'mt-5'" :color="hover ? 'haha' : '#ffa84b'" elevation="5" rounded="pill">Send Message</v-btn>
+                <v-btn class="white--text px-8" height="70" :class="hover ? 'mt-0' : 'mt-1'" :color="hover ? 'haha' : '#ffa84b'" elevation="5" rounded="pill">Send Message</v-btn>
               </v-hover>
             </v-sheet>
 
